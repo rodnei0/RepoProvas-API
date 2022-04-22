@@ -5,7 +5,7 @@ const serviceErrorToStatusCode = {
   forbidden: 403,
   notFound: 404,
   conflict: 409,
-  unprocessable: 422
+  unprocessable: 422,
 };
 
 export function unauthorizedError(entity: string) {
@@ -38,7 +38,7 @@ export function conflictError(entity: string) {
 
 export function unprocessableError(entity: string) {
   return { 
-    type: "conflict",
+    type: "unprocessable",
     message: `Check your e-mail and password!` 
   };
 }
