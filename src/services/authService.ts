@@ -1,6 +1,7 @@
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 import * as userRepository from "../repositories/userRepository.js";
+import * as categoryRepository from "../repositories/categoryRepository.js";
 import {
 	conflictError,
 	notFoundError,

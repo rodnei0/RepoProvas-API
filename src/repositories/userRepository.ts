@@ -1,11 +1,5 @@
 import { client } from "../database.js";
 
-// export interface User {
-// 	id: number;
-// 	email: string;
-// 	password: string;
-// }
-  
 export async function findUserByEmail(email: string){
 	return client.users.findUnique({
 		where: {
